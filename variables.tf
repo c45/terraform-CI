@@ -3,5 +3,5 @@ variable "region" {
 }
 
 variable "name" {
-	default = "c45terraformci"
+  default = "c45terraformci"
 }
