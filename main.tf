@@ -10,7 +10,7 @@ terraform {
     organization = "c45"
 
     workspaces {
-      name = "terraform-CI"
+      name = "Actions"
     }
   }
 }
