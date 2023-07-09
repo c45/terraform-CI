@@ -22,12 +22,12 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "rg" {
-  name     = "sa${var.name}"
+  name     = join("-", ["rg", var.name])
   location = var.region
 }
 
 resource "azurerm_storage_account" "sa" {
-  name                     = join("-", ["sa", var.name])
+  name                     = "sa${var.name}"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = var.region
   account_tier             = "Standard"
