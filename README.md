@@ -1,1 +1,4 @@
-# terraform-CI
+# Continuous Integration for Terraform
+
+This GitHub Actions workflow uses Terraform to automate <br>
+the provisioning of infrastructure in an Azure cloud.
